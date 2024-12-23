@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 
 function ToDoList() {
     
-    const [toDos, setToDos] = useState([{text:"asdkfsdf",status:false}])
+    const [toDos, setToDos] = useState([])
     const [toDo,setToDo] = useState("")
 
     function handleInputChange(event) {
