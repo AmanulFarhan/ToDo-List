@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #020631;
+  }
+
+  .toDo-List {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 4rem;
+    color: white;
+
+  }
+  button {
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  .add-button {
+    background-color: hsla(120, 91%, 54%, 0.678);
+  }
+  .add-button:hover {
+    background-color: hsla(120, 91%, 41%, 0.678);
+  }
+  .delete-button {
+    background-color: hsla(0, 91%, 54%, 0.719);
+  }
+  .delete-button:hover {
+    background-color: hsla(0, 91%, 34%, 0.808);
+  }
+  .up-button,.down-button {
+    background-color: hsla(256, 70%, 55%, 0.678);
+  }
+  .up-button:hover,.down-button:hover {
+    background-color: hsla(256, 70%, 35%, 0.678);
+  }
+
+  input[type="text"] {
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 3px solid black;
+    color: black;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  ol {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  li {
+    width: 90%;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px;
+    background-color: gray;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 5px solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-sizing: border-box;
+  }
+  .text {
+    flex: 1;
+  }
+
+  .delete-button,.up-button,.down-button {
+    padding: 8px 12px;
+    font-size: 1.4rem;
+    margin-left: 18px;
+  }
+
+  .completed {
+    flex: 1;
+    text-decoration: line-through;
+    
+  }
+
+  @media (min-width: 768px) {
+    li {
+      width: 60%; /* Wider for tablets and larger screens */
+      font-size: 2rem; /* Increase font size for larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    li {
+      width: 50%; /* Even wider for desktops */
+    }
+  }
